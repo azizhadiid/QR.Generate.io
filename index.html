@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+
+    <!-- Link For Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Input field -->
+    <div class="container">
+        <p>Enter you link website or text</p>
+        <input type="text" placeholder="Link or Text" id="qrText">
+        <!-- to show the qr code -->
+        <div id="imgBox">
+            <img src="" alt="" id="qrImage">
+        </div>
+        <button onclick="generateQR()">
+            <p>Click to Generate</p>
+            <i class="fa-solid fa-qrcode"></i>
+        </button>
+    </div>
+
+
+    <!-- My Script -->
+    <script src="script.js"></script>
+
+    <!-- font awasome -->
+    <script src="https://kit.fontawesome.com/3659f450a4.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(48, 46, 46);
+    /* display: flex;
+    justify-content: center; */
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    padding: 25px 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container p {
+    font-family: 'open sans';
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.container input {
+    width: 350px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-style: 20px;
+    border: 1px solid black;
+    font-family: 'open sans';
+}
+
+.container button {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(24, 130, 230);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 5px;
+    width: 375px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: rgb(10, 12, 57);
+    transition: 1s;
+}
+
+.container button p{
+    font-size: 20px;
+    color: white;
+    font-family: 'open sans';
+    margin-top: 5px;
+}
+
+.container button i {
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#imgBox {
+    width: 200px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+    padding: 5px;
+}
+
+#imgBox img {
+    width: 100%;
+}
+
+#imgBox.show-img {
+    max-height: 350px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+    25% {
+        transform: translateX(-2px);
+        border: 1px solid red;
+    }
+    50% {
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+    75% {
+        transform: translateX(2px);
+        border: 1px solid red;
+    }
+    100% {
+        transform: translateX(0);
+        border: 1px solid red;
+    }
+}
